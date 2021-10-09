@@ -1,0 +1,25 @@
+@import url('sidemenu.css');
+
+body {
+  font-family: 'Questrial', sans-serif;
+
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(215, 12%, 80%);
+  --blue-800: hsl(207, 40%, 26%);
+  --red-500: hsl(6, 95%, 67%);
+  --dark-red-600: hsl(6, 58%, 58%);
+}
+
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+
+  &__side-menu {
+    background-color: var(--gray-500);
+  }
+
+  &__calendar {
+    background-color: var(--white);
+  }
+}
