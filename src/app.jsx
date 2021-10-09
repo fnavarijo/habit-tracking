@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
-function App () {
+import SideMenu from './components/SideMenu.jsx';
+
+function App() {
   return (
     <main id="app">
       <div className="layout">
-        <div className="layout__side-menu">Side Menu</div>
+        <SideMenu />
         <div className="layout__calendar">Calendar</div>
       </div>
     </main>
-  )
+  );
 }
 
 export default App;
